@@ -2,6 +2,8 @@
 
 #pragma once
 
+#include "IPropertyTypeCustomization.h"
+
 class FRTMSDF_SettingsStructCustomization : public IPropertyTypeCustomization
 {
 public:

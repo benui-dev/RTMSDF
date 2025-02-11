@@ -2,9 +2,10 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "EditorReimportHandler.h"
 #include "Factories/TextureFactory.h"
+#include "Runtime/Launch/Resources/Version.h"
+
 #include "RTMSDF_BitmapFactory.generated.h"
 
 enum class ERTMSDF_Channels : uint8;

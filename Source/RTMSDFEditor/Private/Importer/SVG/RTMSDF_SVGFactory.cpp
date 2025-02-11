@@ -1,18 +1,21 @@
 ﻿// Copyright (c) Richard Meredith AB. All Rights Reserved
 
-#include "RTMSDF_SVGFactory.h"
 #include "AssetImportTask.h"
-#include "RTMSDF_SVGGenerationHelpers.h"
-#include "Importer/RTMSDFTextureSettingsCache.h"
-#include "RTMSDF_SVGImportAssetData.h"
-#include "RTMSDF_SVGImportSettings.h"
 #include "ChlumskyMSDFGen/Public/Core/msdfgen.h"
 #include "ChlumskyMSDFGen/Public/Ext/import-svg.h"
 #include "Config/RTMSDFConfig.h"
 #include "Curves/CurveLinearColorAtlas.h"
+#include "Editor.h"
 #include "EditorFramework/AssetImportData.h"
 #include "Engine/Texture2DArray.h"
+#include "Importer/RTMSDFTextureSettingsCache.h"
 #include "Module/RTMSDFEditor.h"
+#include "RTMSDF_SVGFactory.h"
+#include "RTMSDF_SVGGenerationHelpers.h"
+#include "RTMSDF_SVGImportAssetData.h"
+#include "RTMSDF_SVGImportSettings.h"
+#include "UObject/UObjectIterator.h"
+
 #if ENGINE_MAJOR_VERSION >=5 && ENGINE_MINOR_VERSION >=2
 #include "TextureReferenceResolver.h"
 #endif

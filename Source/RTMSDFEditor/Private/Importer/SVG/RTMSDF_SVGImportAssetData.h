@@ -2,8 +2,9 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine/AssetUserData.h"
 #include "RTMSDF_SVGImportSettings.h"
+
 #include "RTMSDF_SVGImportAssetData.generated.h"
 
 UCLASS(meta=(DisplayName="SVG to SDF Import Asset Data [RTMSDF]"))

@@ -2,7 +2,10 @@
 
 #pragma once
 
-DECLARE_LOG_CATEGORY_EXTERN(ChlumskyMSDFGen, All, All)
+#include "Logging/LogMacros.h"
+#include "Modules/ModuleInterface.h"
+
+DECLARE_LOG_CATEGORY_EXTERN(ChlumskyMSDFGen, All, All);
 
 class FChlumskyMSDFGenModule : public IModuleInterface
 {};

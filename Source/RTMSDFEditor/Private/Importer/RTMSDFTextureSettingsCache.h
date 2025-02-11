@@ -2,6 +2,10 @@
 
 #pragma once
 
+#include "Engine/Texture2D.h"
+#include "Engine/TextureDefines.h"
+#include "Runtime/Launch/Resources/Version.h"
+
 #if ENGINE_MAJOR_VERSION >=5 && ENGINE_MINOR_VERSION >=1
 #define HAS_DITHER_MIPMAP_ALPHA 0
 #else
@@ -44,8 +48,8 @@ struct FRTMSDFTextureSettingsCache
 
 		// restore if there is a new value, or set to default value
 #define CACHE(field, defaultValue) field = texture ? texture->field : defaultValue
-		CACHE(AddressX, TA_Clamp);
-		CACHE(AddressY, TA_Clamp);
+		CACHE(AddressX, TEnumAsByte<TextureAddress>(TA_Clamp));
+		CACHE(AddressY, TEnumAsByte<TextureAddress>(TA_Clamp));
 #undef  CACHE
 
 #define CACHE(field) field = texture ? texture->field : defaultTexture->field;

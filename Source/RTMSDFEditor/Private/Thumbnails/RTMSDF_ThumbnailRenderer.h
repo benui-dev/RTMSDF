@@ -2,9 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "ThumbnailRendering/TextureThumbnailRenderer.h"
 #include "RTMSDF_ThumbnailRenderer.generated.h"
+
+class UMaterialInterface;
+class UMaterialInstanceDynamic;
 
 /**
  * 

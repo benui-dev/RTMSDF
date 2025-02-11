@@ -1,11 +1,14 @@
 ﻿// Copyright (c) Richard Meredith AB. All Rights Reserved
 
-#include "RTMSDF_ThumbnailRenderer.h"
 #include "CanvasItem.h"
 #include "CanvasTypes.h"
+#include "Engine/Engine.h"
+#include "Engine/Texture2D.h"
 #include "Importer/Bitmap/RTMSDF_BitmapImportAssetData.h"
 #include "Importer/SVG/RTMSDF_SVGImportAssetData.h"
 #include "Materials/MaterialInstanceDynamic.h"
+#include "RTMSDF_ThumbnailRenderer.h"
+#include "TextureResource.h"
 #include "ThumbnailRendering/ThumbnailManager.h"
 
 URTMSDF_ThumbnailRenderer::URTMSDF_ThumbnailRenderer()

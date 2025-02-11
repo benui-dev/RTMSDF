@@ -5,6 +5,6 @@
 #define LOCTEXT_NAMESPACE "ChlumskyMSDFGen"
 DEFINE_LOG_CATEGORY(ChlumskyMSDFGen);
 
-IMPLEMENT_MODULE(FChlumskyMSDFGenModule, ChlumskyMSDFGen)
+IMPLEMENT_MODULE(FChlumskyMSDFGenModule, ChlumskyMSDFGen);
 
 #undef LOCTEXT_NAMESPACE

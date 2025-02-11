@@ -1,17 +1,21 @@
 // Copyright (c) Richard Meredith AB. All Rights Reserved
 
-#include "RTMSDFEditor.h"
-#include "ISettingsModule.h"
-#include "ISettingsSection.h"
 #include "Config/RTMSDFConfig.h"
 #include "DetailsCustomization/RTMSDF_SettingsStructCustomization.h"
+#include "Engine/Texture2D.h"
+#include "ISettingsModule.h"
+#include "ISettingsSection.h"
+#include "Modules/ModuleManager.h"
+#include "PropertyEditorModule.h"
+#include "RTMSDFEditor.h"
 #include "ThumbnailRendering/ThumbnailManager.h"
 #include "Thumbnails/RTMSDF_ThumbnailRenderer.h"
 
 #define LOCTEXT_NAMESPACE "RTMSDFEditorModule"
+
 DEFINE_LOG_CATEGORY(RTMSDFEditor);
 
-IMPLEMENT_MODULE(FRTMSDFEditorModule, RTMSDFEditor)
+IMPLEMENT_MODULE(FRTMSDFEditorModule, RTMSDFEditor);
 
 namespace RTMSDF
 {

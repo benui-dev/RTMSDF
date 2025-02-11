@@ -7,6 +7,7 @@
 #include "Config/RTMSDFConfig.h"
 #include "Curves/CurveLinearColorAtlas.h"
 #include "EditorFramework/AssetImportData.h"
+#include "HAL/FileManager.h"
 #include "Importer/RTMSDFTextureSettingsCache.h"
 #include "Module/RTMSDFEditor.h"
 

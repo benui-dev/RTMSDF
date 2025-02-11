@@ -2,10 +2,14 @@
 
 #pragma once
 
+#include "HAL/Platform.h"
+
 enum class ERTMSDFFormat : uint8;
 enum class ERTMSDFColoringMode : uint8;
 enum class ERTMSDFErrorCorrectionMode : uint8;
 struct FRTMSDFTextureSettingsCache;
+
+class UTexture2D;
 
 namespace msdfgen
 {

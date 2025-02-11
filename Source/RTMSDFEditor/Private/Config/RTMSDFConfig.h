@@ -2,10 +2,11 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
+#include "Engine/TextureDefines.h"
 #include "Importer/Bitmap/RTMSDF_BitmapImportSettings.h"
 #include "Importer/SVG/RTMSDF_SVGImportSettings.h"
 #include "UObject/Object.h"
+
 #include "RTMSDFConfig.generated.h"
 
 UCLASS(Config=RTMSDF, DefaultConfig)

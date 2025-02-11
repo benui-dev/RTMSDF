@@ -2,7 +2,6 @@
 
 #pragma once
 
-#include "CoreMinimal.h"
 #include "RTMSDF_BitmapImportSettings.h"
 #include "RTMSDF_BitmapImportAssetData.generated.h"
 
