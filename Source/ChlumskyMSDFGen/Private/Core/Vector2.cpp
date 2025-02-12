@@ -1,6 +1,8 @@
 
 #include "Vector2.h"
 
+#include "GenericPlatform/GenericPlatformCompilerPreSetup.h"
+
 THIRD_PARTY_INCLUDES_START
 
 namespace msdfgen {

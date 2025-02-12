@@ -4,6 +4,8 @@
 #include <cstdlib>
 #include <cmath>
 
+#include "HAL/Platform.h"
+
 namespace msdfgen {
 
 /**

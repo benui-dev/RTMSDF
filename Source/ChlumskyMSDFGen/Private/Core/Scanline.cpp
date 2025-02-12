@@ -1,10 +1,9 @@
 
-#include "Scanline.h"
 
+#include "Scanline.h"
 #include <algorithm>
 #include "arithmetics.hpp"
 
-THIRD_PARTY_INCLUDES_START
 namespace msdfgen {
 
 static int compareIntersections(const void *a, const void *b) {
@@ -76,14 +75,14 @@ void Scanline::preprocess() {
     }
 }
 
-void Scanline::setIntersections(const std::vector<Intersection> &intersections) {
-    this->intersections = intersections;
+void Scanline::setIntersections(const std::vector<Intersection> &inIntersections) {
+    this->intersections = inIntersections;
     preprocess();
 }
 
 #ifdef MSDFGEN_USE_CPP11
-void Scanline::setIntersections(std::vector<Intersection> &&intersections) {
-    this->intersections = (std::vector<Intersection> &&) intersections;
+void Scanline::setIntersections(std::vector<Intersection> &&inIntersections) {
+    this->intersections = (std::vector<Intersection> &&) inIntersections;
     preprocess();
 }
 #endif
@@ -124,4 +123,3 @@ bool Scanline::filled(double x, FillRule fillRule) const {
 }
 
 }
-THIRD_PARTY_INCLUDES_END
