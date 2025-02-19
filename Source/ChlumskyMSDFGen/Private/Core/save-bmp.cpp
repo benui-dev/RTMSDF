@@ -118,7 +118,7 @@ bool saveBmp(const BitmapConstRef<byte, 3> &bitmap, const char *filename) {
     return !fclose(file);
 }
 
-bool saveBmp(const BitmapConstRef<byte, 4> &bitmap, const char *filename) {
+bool saveBmp(const BitmapConstRef<byte, 4>&, const char*) {
     // RGBA not supported by the BMP format
     return false;
 }
