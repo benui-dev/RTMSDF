@@ -1,7 +1,5 @@
 ﻿// Copyright (c) Richard Meredith AB. All Rights Reserved
 
-#pragma once
-
 #include "RTMSDF_SVGGenerationHelpers.h"
 #include "Importer/RTMSDFTextureSettingsCache.h"
 #include "RTMSDF_SVGImportSettings.h"
