@@ -49,6 +49,6 @@ struct FRTMSDF_BitmapImportSettings : public FRTMSDF_CommonImportSettings
 
 protected:
 	/* Which channels should be used to generate SDFs - unused channels will be discarded */
-	UPROPERTY(EditAnywhere, Category="Import", meta=(Bitmask, BitmaskEnum=ERTMSDF_Channels, EditCondition="NumChannels > 1 && RGBAMode == ERTMSDF_RGBAMode::SeparateChannels", EditConditionHides, DisplayName="SDF Channels"))
+	UPROPERTY(EditAnywhere, Category="Import", meta=(Bitmask, BitmaskEnum="/Script/RTMSDFEditor.ERTMSDF_Channels", EditCondition="NumChannels > 1 && RGBAMode == ERTMSDF_RGBAMode::SeparateChannels", EditConditionHides, DisplayName="SDF Channels"))
 	uint8 SDFChannels = static_cast<uint8>(ERTMSDF_Channels::All);
 };
